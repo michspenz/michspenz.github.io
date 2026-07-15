@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Michael Oscar — Cybersecurity &amp; DFIR</title>
+<meta name="description" content="Michael Oscar — penetration tester and digital forensics practitioner. Offensive security, incident response, and Python-based security tooling.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ============ NAV ============ -->
+<header class="site-header" id="site-header">
+  <div class="nav-inner">
+    <a href="#top" class="logo">root@michspenz<span class="accent">:~$</span></a>
+
+    <nav class="nav-links" id="nav-links">
+      <a href="#about" data-flag="--about">about</a>
+      <a href="#projects" data-flag="--projects">projects</a>
+      <a href="#skills" data-flag="--skills">skills</a>
+      <a href="#contact" data-flag="--contact">contact</a>
+    </nav>
+
+    <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="top">
+    <div class="hero-hexgrid" aria-hidden="true"></div>
+    <div class="hero-inner">
+      <div class="terminal-window">
+        <div class="terminal-bar">
+          <span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span>
+          <span class="terminal-title">michael@oscar: ~</span>
+        </div>
+        <div class="terminal-body" id="terminal-body" role="img" aria-label="Terminal output: whoami returns Michael Oscar — Offensive &amp; Defensive Security. cat status.txt returns CEH-certified penetration tester and DFIR practitioner, open to penetration testing, SOC analyst and DFIR roles in Nigeria.">
+          <p class="line"><span class="prompt">$</span> <span class="cmd">whoami</span></p>
+          <p class="line out">Michael Oscar — Offensive &amp; Defensive Security</p>
+          <p class="line"><span class="prompt">$</span> <span class="cmd">cat status.txt</span></p>
+          <p class="line out">CEH-certified · Penetration Tester &amp; DFIR Practitioner</p>
+          <p class="line out">Open to: Penetration Testing · SOC Analyst · DFIR roles (Nigeria)</p>
+          <p class="line typing-line"><span class="prompt">$</span> <span class="typed" id="typed-cmd"></span><span class="cursor" id="cursor">▍</span></p>
+        </div>
+      </div>
+      <p class="hero-tagline">Breaking systems methodically, so the writeup is worth more than the exploit.</p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View projects</a>
+        <a href="https://github.com/michspenz" class="btn btn-ghost" target="_blank" rel="noopener">GitHub ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section" id="about">
+    <div class="section-inner">
+      <p class="eyebrow">[ 0x01 ] about</p>
+      <h2 class="section-title">Offense-informed defense.</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>I'm a cybersecurity enthusiast operating across both sides of the security spectrum: breaking systems ethically as a penetration tester, and reconstructing attacks as a digital forensics investigator. I build open source security tools and document real world offensive and forensic case studies.</p>
+          <p>My methodology is structured and evidence driven. Every engagement follows disciplined scoping, methodical evidence handling, and artifact correlation, with reporting that a client or hiring manager can act on immediately, not just read through.</p>
+          <p>I'm CEH certified and actively looking for entry-level offensive security, SOC analyst, or DFIR opportunities in Nigeria. I also take on freelance penetration testing engagements.</p>
+        </div>
+        <dl class="about-facts">
+          <div class="fact">
+            <dt>Focus</dt>
+            <dd>Penetration Testing · Digital Forensics · Incident Response</dd>
+          </div>
+          <div class="fact">
+            <dt>Certification</dt>
+            <dd>CEH (Certified Ethical Hacker)</dd>
+          </div>
+          <div class="fact">
+            <dt>Methodology</dt>
+            <dd>Structured, evidence-driven testing and reporting</dd>
+          </div>
+          <div class="fact">
+            <dt>Based in</dt>
+            <dd>Lagos, Nigeria</dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section class="section section-alt" id="projects">
+    <div class="section-inner">
+      <p class="eyebrow">[ 0x02 ] projects</p>
+      <h2 class="section-title">Featured projects.</h2>
+      <p class="section-lede">Independent research and tooling, published and maintained on GitHub.</p>
+
+      <div class="project-grid">
+
+        <article class="project-card">
+          <div class="project-head">
+            <h3>ReconX</h3>
+            <span class="badge">Python</span>
+          </div>
+          <p>A modular reconnaissance framework covering subdomain enumeration, TCP port scanning, and service banner grabbing — built to script the repetitive first hour of an engagement instead of clicking through it.</p>
+          <ul class="project-tags">
+            <li>subdomain enum</li>
+            <li>port scanning</li>
+            <li>banner grabbing</li>
+          </ul>
+          <a href="https://github.com/michspenz" class="project-link" target="_blank" rel="noopener">View repository ↗</a>
+        </article>
+
+        <article class="project-card">
+          <div class="project-head">
+            <h3>Forensic Metadata Analyzer</h3>
+            <span class="badge">Python · CLI</span>
+          </div>
+          <p>A command-line forensic tool for extracting and analyzing embedded metadata across JPG, PNG, TIFF, PDF, and DOCX files — built for cases where the metadata is the evidence.</p>
+          <ul class="project-tags">
+            <li>DFIR</li>
+            <li>metadata extraction</li>
+            <li>multi-format</li>
+          </ul>
+          <a href="https://github.com/michspenz" class="project-link" target="_blank" rel="noopener">View repository ↗</a>
+        </article>
+
+        <article class="project-card">
+          <div class="project-head">
+            <h3>Security Analyzer Toolkit</h3>
+            <span class="badge">Python</span>
+          </div>
+          <p>A collection of self-directed security scripts — password strength checking, malware scanning, and system reconnaissance, each with structured logging for later review.</p>
+          <ul class="project-tags">
+            <li>password auditing</li>
+            <li>malware scanning</li>
+            <li>system recon</li>
+          </ul>
+          <a href="https://github.com/michspenz" class="project-link" target="_blank" rel="noopener">View repository ↗</a>
+        </article>
+
+      </div>
+
+      <p class="project-note">Repository links point to my GitHub profile — swap in the direct repo URLs before you deploy (see the note at the end of this reply).</p>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section class="section" id="skills">
+    <div class="section-inner">
+      <p class="eyebrow">[ 0x03 ] skills</p>
+      <h2 class="section-title">Technical skills.</h2>
+
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h3>Offensive Security</h3>
+          <ul>
+            <li>Web application penetration testing</li>
+            <li>Metasploit</li>
+            <li>Manual exploitation &amp; custom scripting</li>
+            <li>OSINT &amp; reconnaissance</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Digital Forensics &amp; IR</h3>
+          <ul>
+            <li>Metadata &amp; artifact analysis</li>
+            <li>Wireshark / packet analysis</li>
+            <li>MITRE ATT&amp;CK mapping</li>
+            <li>Incident reporting</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Development &amp; Tooling</h3>
+          <ul>
+            <li>Python — security &amp; automation</li>
+            <li>Bash / CLI-first workflows</li>
+            <li>JavaScript / Node.js</li>
+            <li>Git &amp; open-source publishing</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section section-alt" id="contact">
+    <div class="section-inner section-inner-narrow">
+      <p class="eyebrow">[ 0x04 ] contact</p>
+      <h2 class="section-title">Get in touch.</h2>
+      <p class="section-lede">Open to entry-level penetration testing, SOC analyst, and DFIR roles, as well as freelance engagements. The fastest way to reach me is email.</p>
+
+      <div class="contact-grid">
+        <a href="mailto:mikespenz25@gmail.com" class="contact-card">
+          <span class="contact-label">Email</span>
+          <span class="contact-value">mikespenz25@gmail.com</span>
+        </a>
+        <a href="https://github.com/michspenz" class="contact-card" target="_blank" rel="noopener">
+          <span class="contact-label">GitHub</span>
+          <span class="contact-value">github.com/michspenz</span>
+        </a>
+        <a href="https://x.com/king_vamp" class="contact-card" target="_blank" rel="noopener">
+          <span class="contact-label">X (Twitter)</span>
+          <span class="contact-value">x.com/king_vamp</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="section-inner footer-inner">
+    <p>© <span id="year"></span> Michael Oscar. Built with HTML, CSS, and no framework.</p>
+    <a href="#top" class="back-top">back to top ↑</a>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
